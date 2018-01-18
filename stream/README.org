@@ -1,4 +1,4 @@
-#+STARTUP indent
+#+STARTUP: indent
 * xCORE-AVX512
 - Auto-vectorization
 | copy [ms] | scale [ms] | add [ms] | triad [ms] |
