@@ -233,21 +233,21 @@ int main(int argc, char* argv[]) {
   MEASURE(add_ref, a_ref.data(), b_ref.data(), c_ref.data(), len);
   MEASURE(triadd_ref, a_ref.data(), b_ref.data(), c_ref.data(), scalar, len);
 
-  MEASURE(copy_avx2, c_avx2.data(), a_avx2.data(), len);
-  MEASURE(scale_avx2, b_avx2.data(), c_avx2.data(), scalar, len);
-  MEASURE(add_avx2, a_avx2.data(), b_avx2.data(), c_avx2.data(), len);
-  MEASURE(triadd_avx2, a_avx2.data(), b_avx2.data(), c_avx2.data(), scalar, len);
+  // MEASURE(copy_avx2, c_avx2.data(), a_avx2.data(), len);
+  // MEASURE(scale_avx2, b_avx2.data(), c_avx2.data(), scalar, len);
+  // MEASURE(add_avx2, a_avx2.data(), b_avx2.data(), c_avx2.data(), len);
+  // MEASURE(triadd_avx2, a_avx2.data(), b_avx2.data(), c_avx2.data(), scalar, len);
 
-  MEASURE(copy_avx512, c_avx512.data(), a_avx512.data(), len);
-  MEASURE(scale_avx512, b_avx512.data(), c_avx512.data(), scalar, len);
-  MEASURE(add_avx512, a_avx512.data(), b_avx512.data(), c_avx512.data(), len);
-  MEASURE(triadd_avx512, a_avx512.data(), b_avx512.data(), c_avx512.data(), scalar, len);
+  // MEASURE(copy_avx512, c_avx512.data(), a_avx512.data(), len);
+  // MEASURE(scale_avx512, b_avx512.data(), c_avx512.data(), scalar, len);
+  // MEASURE(add_avx512, a_avx512.data(), b_avx512.data(), c_avx512.data(), len);
+  // MEASURE(triadd_avx512, a_avx512.data(), b_avx512.data(), c_avx512.data(), scalar, len);
 
-  check(a_avx2, a_ref);
-  check(b_avx2, b_ref);
-  check(c_avx2, c_ref);
+  // check(a_avx2, a_ref);
+  // check(b_avx2, b_ref);
+  // check(c_avx2, c_ref);
 
-  check(a_avx512, a_ref);
-  check(b_avx512, b_ref);
-  check(c_avx512, c_ref);
+  // check(a_avx512, a_ref);
+  // check(b_avx512, b_ref);
+  // check(c_avx512, c_ref);
 }
