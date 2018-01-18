@@ -1,0 +1,10 @@
+#+STARTUP indent
+* xCORE-AVX512
+- Auto-vectorization
+| copy [ms] | scale [ms] | add [ms] | triad [ms] |
+|       194 |        251 |      551 |        551 |
+
+* xCOMMON-AVX512
+- Auto-vectorization
+| copy [ms] | scale [ms] | add [ms] | triad [ms] |
+|       230 |        252 |      627 |        627 |
